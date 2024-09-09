@@ -31,7 +31,7 @@
 		<!-- Main -->
 			<div id="main">
 				
-				<header class="major container medium">
+				<header  id="anchor" class="major container medium">
 					<h2>University Course Work Project</h2>
 					<body>An asteroids like game created for coursework at university. The main twist
 						is that some of the asteroids will try and dodge your bullets or crash into you based on their
@@ -53,14 +53,17 @@
 
 						<section class="feature left">
 							<img class="image" src="images/UniversityProjectFSM.png" alt="" />
+							<div class="caption">Diagram of finite state machine that controls the specific asteroids behaviour</div>
 						</section>
 
 						<section class="feature left">
 							<img class="image" src="images/UniversityProjectGameplay1.gif" alt="" />
+							<div class="caption">Smart Asteroid moving towards player</div>
 						</section>
 
 						<section class="feature left">
 							<img class="image" src="images/UniversityProjectGameplay2.gif" alt="" />
+							<div class="caption">Smart asteroid avoiding bullets from the player</div>
 						</section>
 
 					</div>
@@ -69,8 +72,10 @@
 
 			<div id="image-modal" class="modal">
 				<span class="close">&times;</span>
-				<img class="modal-content" id="modal-img">
-				<div id="caption"></div>
+				<div class="modal-content-container">
+					<img class="modal-content" id="modal-img" src="" alt="">
+					<div id="caption" class="caption"></div>
+				</div>
 			</div>
 
 		<!-- Footer -->

@@ -31,7 +31,7 @@
 		<!-- Main -->
 			<div id="main">
 
-				<header class="major container medium">
+				<header  id="anchor" class="major container medium">
 					<h2>A-Level Computer Science Project</h2>
 					<body>A project made for my final year A-Level Computer Science course. The project is
 						a virtual reality stealth based game in which you have to avoid cameras, lasers and basic enemy AI.
@@ -48,22 +48,27 @@
 					<div class="feature-gallery">
 						<section class="feature left">
 							<img class="image" src="images/Sixth Form Project Title Image.png" alt=""/>
+							<div class="caption">Main menu screen with raycasted selector</div>
 						</section>
 
 						<section class="feature left">
 							<img class="image" src="images/Sixth Form Project Game Image 1.png" alt="" />
+							<div class="caption">Level image</div>
 						</section>
 
 						<section class="feature left">
 							<img class="image" src="images/Sixth Form Project Game Image 2.png" alt="" />
+							<div class="caption">Red alarm flashes and sounds when player triggers a camera or laser</div>
 						</section>
 
 						<section class="feature left">
 							<img class="image" src="images/Sixth Form Project Game Image 3.png" alt="" />
+							<div class="caption">Camera that detects player</div>
 						</section>
 
 						<section class="feature left">
 							<img class="image" src="images/Sixth Form Project Game Image 4.png" alt="" />
+							<div class="caption">Lasers that detect player</div>
 						</section>
 
 					</div>
@@ -72,8 +77,10 @@
 
 			<div id="image-modal" class="modal">
 				<span class="close">&times;</span>
-				<img class="modal-content" id="modal-img">
-				<div id="caption"></div>
+				<div class="modal-content-container">
+					<img class="modal-content" id="modal-img" src="" alt="">
+					<div id="caption" class="caption"></div>
+				</div>
 			</div>
 
 		<!-- Footer -->

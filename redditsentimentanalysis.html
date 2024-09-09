@@ -14,7 +14,7 @@
 
 		<!-- Header -->
 		<div id="header">
-			<h1>Game Development Projects</h1>
+			<h1>General Software Development Projects</h1>
 			<p> Michael Power </p>
 			<br>
 				<div id="container">
@@ -30,14 +30,14 @@
 		<!-- Main -->
 			<div id="main">
 
-				<header class="major container medium">
+				<header  id="anchor" class="major container medium">
 					<h2>Reddit Political Sentiment Analysis</h2>
 					<body>
                         My final year university project used a CNN model to classify Reddit comments as either left-wing or right-wing. The data was then analysed to search for trends. These trends were then displayed on a website.
                     </body>
                     <br>
                     <br>
-                    <body>  The data to train the CNN model was collected by me using the scripts in the RedditDataCollection file. It accessed the API of the two UK-based political Subreddits r/labouruk and r/tories. I then manually classified the data and attempted to train the AI on it. However, as there was not enough data and I did not have enough time to manually label each comment I went with a more naive solution that involved labelling all comments of r/tories as right-wing and all comments of r/labouruk as left-wing. This helped increase the accuracy of the model but it could still only reach an accuracy of 67% due to the limited amount of data and the naive way in which I had to label it. I did continue with using the model to predict on the data and still analysed the information from the predictions. These trends were then graphed using Matplotlib and uploaded to a website to present this data.
+                    <body>  The data to train the CNN model was collected by me using the scripts in the RedditDataCollection file. It accessed the API of the two UK-based political Subreddits r/labouruk and r/tories. I then manually classified the data and attempted to train the AI on it. However, as there was not enough data and I did not have enough time to manually label each comment I went with a more naive solution that involved labelling all comments of r/tories as right-wing and all comments of r/labouruk as left-wing. This helped increase the accuracy of the model but it could still only reach an accuracy of 67% due to the limited amount of data and the naive way in which I had to label it. I continued using the model to predict the labels for the data and still analysed the information from it. These trends were then graphed using Matplotlib and uploaded to a website to present this data.
 					</body>
                     <br>
                     <br>
@@ -86,6 +86,7 @@
 
                         <section class="feature left">
 							<img class="image" src="images/RPSA Title Image.png" alt="" />
+							<div class="caption">Website front page</div>
 						</section>
 
 					</div>
@@ -94,8 +95,10 @@
 
 			<div id="image-modal" class="modal">
 				<span class="close">&times;</span>
-				<img class="modal-content" id="modal-img">
-				<div id="caption"></div>
+				<div class="modal-content-container">
+					<img class="modal-content" id="modal-img" src="" alt="">
+					<div id="caption" class="caption"></div>
+				</div>
 			</div>
 
 		<!-- Footer -->
